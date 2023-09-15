@@ -1,5 +1,5 @@
 # Sistema de Gerenciamento de Vendas 💼
-Programado por: [Milena Alcântara](https://github.com/Milena-Alcantara) :woman_technologist:
+_Programado por:_ [Milena Alcântara](https://github.com/Milena-Alcantara) :woman_technologist:
 <hr>
 
 Este é um sistema de gerenciamento de vendas desenvolvido em Java com a arquitetura MVC, projetado para fins didáticos. Ele oferece funcionalidades para vendedores e gerentes, permitindo um controle eficaz das operações de vendas. Abaixo, você encontrará uma visão geral das funcionalidades disponíveis para cada tipo de usuário:
