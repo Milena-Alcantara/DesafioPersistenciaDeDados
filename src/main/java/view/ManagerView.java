@@ -154,7 +154,6 @@ public class ManagerView {
                 System.out.println("|Nome: "+resultSet.getString("name"));
                 System.out.println("|Email: "+resultSet.getString("email"));
             }
-
         }catch (SQLException err){
             err.printStackTrace();
         }

@@ -12,7 +12,7 @@ public class CustomerRepository {
 
     public boolean registerNewCustomer(String name, String email, String cpf, String address) {
         try {
-            String SQL = "INSERT INTO tbCustomer (name,email,cpf,address) VALUES (?,?,?,?) ";
+            String SQL = "INSERT INTO customer (name,email,cpf,address) VALUES (?,?,?,?) ";
             pstm = conn.prepareStatement(SQL);
             pstm.setString(1, name);
             pstm.setString(2, email);
