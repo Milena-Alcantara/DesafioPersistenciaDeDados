@@ -4,8 +4,8 @@ import controller.*;
 
 import java.sql.ResultSet;
 public class ManagerUseCase {
-    ManagerController managerController = new ManagerController();
-    SellerController sellerController = new SellerController();
+    ManagerController managerController;
+    SellerController sellerController;
     SalesController salesController = new SalesController();
     ProductController productController= new ProductController();
     CustomerController customerController = new CustomerController();

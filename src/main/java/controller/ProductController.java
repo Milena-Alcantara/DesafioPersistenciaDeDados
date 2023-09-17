@@ -6,8 +6,15 @@ import repository.ProductRepository;
 import java.sql.ResultSet;
 
 public class ProductController {
-    ProductRepository productRepository = new ProductRepository();
+    ProductRepository productRepository;
     ProductModel productModel = new ProductModel();
+
+    public ProductController() {
+    }
+
+    public ProductController(ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
 
     public boolean registerNewProduct(String name, Double price){
         productModel.setName(name);

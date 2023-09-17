@@ -8,8 +8,14 @@ import repository.ManagerRepository;
 import java.sql.ResultSet;
 
 public class ManagerController {
-    ManagerRepository managerRepository = new ManagerRepository();
+    ManagerRepository managerRepository;
     ManagerModel managerModel = new ManagerModel();
+
+    public ManagerController() {
+    }
+    public ManagerController(ManagerRepository managerRepository) {
+        this.managerRepository = managerRepository;
+    }
 
     public boolean registerManager(String name, String email, String password){
         managerModel.setName(name);

@@ -2,12 +2,18 @@ package controller;
 
 import model.CustomerModel;
 import repository.CustomerRepository;
+import repository.ManagerRepository;
 
 import java.sql.ResultSet;
 
 public class CustomerController {
-    CustomerRepository customerRepository = new CustomerRepository();
+    CustomerRepository customerRepository ;
     CustomerModel customerModel = new CustomerModel();
+    public CustomerController() {
+    }
+    public CustomerController(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
 
     public boolean registerNewCustomer(String name, String email, String cpf, String address){
         customerModel.setCustomerName(name);

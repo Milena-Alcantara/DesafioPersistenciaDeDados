@@ -6,10 +6,17 @@ import repository.SellerRepository;
 import java.sql.ResultSet;
 
 public class SellerController {
-    SellerRepository sellerRepository = new SellerRepository();
+    SellerRepository sellerRepository;
     SellerModel sellerModel = new SellerModel();
 
-    public boolean registerNewSeller(String name, String email,String password ,String cpf, Double wage){
+    public SellerController() {
+    }
+
+    public SellerController(SellerRepository sellerRepository) {
+        this.sellerRepository = sellerRepository;
+    }
+
+    public boolean registerNewSeller(String name, String email, String password , String cpf, Double wage){
         sellerModel.setName(name);
         sellerModel.setEmail(email);
         sellerModel.setPassword(password);

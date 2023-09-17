@@ -6,8 +6,15 @@ import repository.SalesRepository;
 import java.sql.ResultSet;
 
 public class SalesController {
-    SalesRepository saleRepository = new SalesRepository();
+    SalesRepository saleRepository;
     SalesModel salesModel = new SalesModel();
+
+    public SalesController() {
+    }
+
+    public SalesController(SalesRepository saleRepository) {
+        this.saleRepository = saleRepository;
+    }
 
     public boolean getTotalValuesGreaterThan10(){
         return saleRepository.getTotalValuesGreaterThan10();
